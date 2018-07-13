@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Home.aspx" title="Home"  description="Company home page">
+    <siteMapNode title="Employee" url="empreg.aspx" description="ld home">
+      <siteMapNode title="college hires" url="College Hire.aspx"></siteMapNode>
+      <siteMapNode title="Managerial" url="Managerial.aspx"></siteMapNode>
+
+    </siteMapNode>
+
+    <siteMapNode title="Sales home" url="Sales Home.aspx" description="Sales home">
+      <siteMapNode title="CMA" url="CMA.aspx"></siteMapNode>
+      <siteMapNode title="Karma" url="Karma.aspx"></siteMapNode>
+
+    </siteMapNode>
+    <siteMapNode title="University Home" url="University Home.aspx" description="University home">
+      <siteMapNode title="DAL" url="DAL.aspx">
+      </siteMapNode>
+      <siteMapNode title="GARI" url="GARI.aspx">
+      </siteMapNode>
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>
+

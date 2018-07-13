@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin_Master.master.cs" Inherits="Admin_Ash.Admin_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <table style="width: 100%">
+                <tr>
+                    <td colspan="2" style="background-color: saddlebrown; color: white; font-family: 'Century Gothic'; font-size: 54px; font-weight: 800; text-align: center">
+                        <hr style="border: 2px solid black" />
+                        IPL MANAGEMENT SYSTEM
+                     <hr style="border: 2px solid black" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="background-color: sandybrown; color: white; font-family: 'Century Gothic'; font-size: 54px; font-weight: 800; text-align: center">ADMIN 
+                    <hr style="border: 2px solid black" />
+                    </td>
+                    <tr>
+                        <td colspan="2" style="text-align: right" class="auto-style1">
+                            <div id="divLogout" runat="server" visible="false">
+                                <asp:LinkButton ID="lbtnLogout" runat="server" Text="Logout" OnClick="lbtnLogout_Click"></asp:LinkButton>
+                            </div>
+                        </td>
+                    </tr>
+
+                   <tr>
+                <td colspan="2">
+                    <asp:SiteMapDataSource ID="sms" runat="server" />
+                   
+
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="width:20%;vertical-align:top">
+                    <asp:TreeView ID="tv" runat="server" DataSourceID="sms"></asp:TreeView></td>
+                
+                <td style="width:80%;vertical-align:top">
+                    <asp:SiteMapPath ID="smp" runat="server"></asp:SiteMapPath>
+                </td>
+            </tr>
+
+
+                    <td style="width: 80%; vertical-align: top">
+                        <asp:ContentPlaceHolder ID="cphBody" runat="server"></asp:ContentPlaceHolder>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; font-size: small; background-color: deepskyblue">&copy All Rights Reserved. 2018</td>
+
+
+                </tr>
+            </table>
+
+
+        </div>
+    </form>
+</body>
+</html>
